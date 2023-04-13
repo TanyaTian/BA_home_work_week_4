@@ -1,0 +1,32 @@
+{
+  "name": "ba_home_work_week_4",
+  "version": "1.0.0",
+  "description": "BA第四周作业：可升级合约",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanyaTian/BA_home_work_week_4.git"
+  },
+  "author": "tanya.ty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanyaTian/BA_home_work_week_4/issues"
+  },
+  "homepage": "https://github.com/TanyaTian/BA_home_work_week_4#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/contracts": "^4.8.2",
+    "@openzeppelin/hardhat-upgrades": "^1.22.1",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.13.1",
+    "web3": "^1.9.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}

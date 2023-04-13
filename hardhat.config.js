@@ -33,7 +33,7 @@ module.exports = {
     },
   },
   etherscan: {
-    apiKey: "BFXRGSFY8PAH1GY3S8N1A6CM7BVEG8S68J", // Your Etherscan API key
+    apiKey: process.env.API_KEY, // Your Etherscan API key
   }
 };
 

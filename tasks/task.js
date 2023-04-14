@@ -12,7 +12,7 @@ const lockJ = require("../artifacts/contracts/Lock.sol/Lock.json")
     }
 
     //调用未升级的合约
-    const Contract = new hre.ethers.Contract("0x91A610cAEA0A84517D0a0A2958fB3Aa932cd6199", lockJ.abi, sing)
+    const Contract = new hre.ethers.Contract("0x9Ad38650730338A335d6dF507d55663CD896A83c", lockJ.abi, sing)
     // let balance = await Contract.balance()
     // console.log("balance", balance.toString());
     //初始化一次init
@@ -32,11 +32,11 @@ const lockJ = require("../artifacts/contracts/Lock.sol/Lock.json")
     //合约升级
 
     const Contract2 = new hre.ethers.Contract("0x84873714443a3fEDaB602aDdB33C30a059AE8561", upgradeJ.abi, sing)
-    const upgrade = await Contract2.upgrade("0x9Ad38650730338A335d6dF507d55663CD896A83c", "0xDC9082AEDA28c908C03CfE3F1c893f82a1e791A5")
+    const upgrade = await Contract2.upgrade("0x9Ad38650730338A335d6dF507d55663CD896A83c", "0x91A610cAEA0A84517D0a0A2958fB3Aa932cd6199")
     console.log("upgrade", upgrade);
 
     //调用升级的合约
-    const Contract3 = new hre.ethers.Contract("0xDEF3ab1872A657edcC6c3Ee9a7cd7c78D2751983", lockJ.abi, sing)
+    const Contract3 = new hre.ethers.Contract("0x9Ad38650730338A335d6dF507d55663CD896A83c", lockJ.abi, sing)
     const balance1 = await Contract3.balance()
     console.log("balance 1", balance1.toString());
 
